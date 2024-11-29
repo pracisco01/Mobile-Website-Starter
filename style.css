@@ -1,0 +1,146 @@
+/* Basic reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  padding: 0px;
+  background-image: url("https://cdn.glitch.global/1fae4c7e-3ab9-445d-84f0-dc8d4ea705b4/Screenshot%202024-11-22%20at%2015-37-27%20Webex%20AI.png?v=1732263305189");
+  background-position: top;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #f0f0f0; /* Fallback color */
+  min-height: 235vh; /* Ensure body takes the entire viewport height */
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main content */
+main {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section#extra-content {
+  height: 800px; /* Added height to create enough content to scroll */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Contact Button */
+#contactButton {
+  position: fixed;
+  top: 28px;
+  right: 25px;
+  /* transform: rotate(-90deg); */
+  /* transform-origin: 100% 100%;
+  color: #ffffff;
+  background-color: #0b63ac;
+  border-color: #0b63ac;
+  border-radius: 5px; */
+  height: 30px;
+  width: 110px;
+  background-color: transparent; /* White background */
+  color: #ffffff; /* Black text */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  padding: 4px 20px; /* Padding for the button */
+  font-size: 0.884em; /* Slightly larger text */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Collapse Card */
+#collapseCard {
+  position: fixed;
+  top: 35%;
+  right: 0;
+}
+
+/* Center Align Button */
+.btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+/* Styling the collapsed container that holds all the items in the contact menu */
+#contactNav {
+  background-color: #000c00 !important; /* Lighten the background to white */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Style the list items to improve readability */
+.navbar-nav .nav-link {
+  background-color: #000c00 !important; /* Lighten the background to white */
+  color: #ffffff !important; /* Change text color to blue for better readability */
+  font-weight: 500; /* Semi-bold for better visibility */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Add a hover effect to improve interactivity */
+.navbar-nav .nav-link:hover {
+  color: #0056b3 !important; /* Darker blue on hover */
+  text-decoration: underline; /* Underline effect to indicate interaction */
+}
+
+/* Styling the navbar container (the entire box that holds the links) */
+.navbar-container {
+  background-color: #000000 !important; /* Set to a light grey or any preferred color */
+}
